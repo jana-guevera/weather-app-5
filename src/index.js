@@ -15,9 +15,10 @@ app.use(express.static(publicPath));
 const partialsPath = path.join(__dirname, "../views/partials");
 hbs.registerPartials(partialsPath);
 
+
 app.get("/", (req, res) => {
     res.render("index", {
-        title: "Weather App!!!!",
+        title: "Weather App",
         author: "Beyond Training"
     });
 });

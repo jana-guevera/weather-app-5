@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <div class="container">
+        {{>header}}
+
+        <form>
+            <input type="text" id="location-input">
+            <input type="submit" value="Search">
+        </form>
+
+        <p class="message-1"></p>
+        <p class="message-2"></p>
+    </div>
+
+    {{>footer}}
+
+    <script src="/js/app.js"></script>
+</body>
+</html>

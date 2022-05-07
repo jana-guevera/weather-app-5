@@ -70,10 +70,12 @@ app.get("*", (req, res) => {
     });
 });
 
-console.log("Hello world");
+var port = 3000;
 
+if(process.env.PORT){
+    port = process.env.PORT;
+}
 
-
-app.listen(3000); //port
+app.listen(process.env.PORT); //port
 
 
